@@ -1,0 +1,20 @@
+{
+  "name": "liwordcloud-backend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["wordcloud", "cloudflare-workers", "linkedin"],
+  "author": "",
+  "license": "MIT",
+  "description": "CloudFlare Workers backend for LinkedIn Word Cloud Generator",
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20250923.0",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.38.0"
+  }
+}
