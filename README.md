@@ -145,13 +145,17 @@ Generates a word cloud from input text.
 
 1. Configure your CloudFlare account with Wrangler:
 ```bash
-cd backend
 npx wrangler login
 ```
 
-2. Deploy the backend:
+2. Deploy the backend from the root directory:
 ```bash
 npm run deploy
+```
+
+Or use wrangler directly:
+```bash
+npx wrangler deploy
 ```
 
 ### Frontend Deployment

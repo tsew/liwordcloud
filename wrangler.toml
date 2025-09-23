@@ -1,6 +1,6 @@
 name = "liwordcloud-api"
-compatibility_date = "2024-01-01"
-main = "src/index.ts"
+compatibility_date = "2025-09-23"
+main = "backend/src/index.ts"
 
 [env.production]
 name = "liwordcloud-api"
