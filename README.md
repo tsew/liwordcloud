@@ -97,6 +97,28 @@ npm run build:frontend
 npm run build:backend
 ```
 
+### Configuration
+
+The frontend needs to know the backend API URL. For local development, this is automatically set to `http://localhost:8787`.
+
+For production deployment:
+
+1. Copy the environment example file:
+```bash
+cp frontend/.env.example frontend/.env.production.local
+```
+
+2. Update the API URL in the file:
+```bash
+# In frontend/.env.production.local
+REACT_APP_API_URL=https://your-worker.your-account.workers.dev
+```
+
+3. Rebuild the frontend:
+```bash
+npm run build:frontend
+```
+
 ## API Endpoints
 
 ### POST `/api/generate-wordcloud`

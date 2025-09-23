@@ -28,7 +28,9 @@ const WordCloudGenerator: React.FC<WordCloudGeneratorProps> = () => {
   const generateWordCloud = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:8787/api/generate-wordcloud', {
+      // Use environment variable for API URL, fallback to localhost for development
+      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8787';
+      const response = await fetch(`${apiUrl}/api/generate-wordcloud`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
